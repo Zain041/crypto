@@ -361,14 +361,14 @@ function App() {
                       className="kishu-rocket"
                     />
 
-                    <img
+                    {/* <img
                       src={rooster2}
                       loading="lazy"
                       srcSet="images/kishu-rocket-trail-p-500.png 500w, images/kishu-rocket-trail-p-800.png 800w, images/kishu-rocket-trail.png 805w"
                       // sizes="(max-width: 479px) 100vw, (max-width: 1919px) 671.9921875px, 42vw"
-                      alt="tikimask122"
+                      alt="tikimask"
                       className="rocket-trail"
-                    />
+                    /> */}
                     <img
                       src={titkimask2}
                       loading="lazy"
