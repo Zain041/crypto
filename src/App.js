@@ -4,12 +4,16 @@ import rooster from "./assets/png/rooster4.png";
 import rooster1 from "./assets/png/rooster8.png";
 import rooster2 from "./assets/png/rooster2.png";
 import rooster7 from "./assets/png/rooster9.png";
-import rooster5 from "./assets/png/rooster5.png";
+import rooster10 from "./assets/png/rooster10.png";
 import titkimask from "./assets/png/tikimask2.png";
 import titkimask2 from "./assets/png/tikimask1.png";
+import wood from "./assets/png/wood.png";
+import welcome from "./assets/png/welcome.png";
+
+import pineapple from "./assets/png/pineapple.png";
 
 import butterfly from "./assets/gif/butterfly1.gif";
-import monkey1 from "./assets/gif/monkey1.gif";
+import palm1 from "./assets/gif/palm1.gif";
 import butterfly1 from "./assets/gif/butterfly2.gif";
 import frog from "./assets/gif/frog.gif";
 import Lizard2 from "./assets/gif/lizard2.gif";
@@ -69,7 +73,10 @@ function App() {
             <h1 className="text-center" style={{ color: "#a6745e" }}>
               Buy
             </h1>
-            <h2 className="text-center">How to buy $BREAST</h2>
+            <div className="text-center">
+              <img width="50%" height="80px" src={wood} alt="footer" />
+            </div>
+            <h2 className="text-center">How to buy Hulihuli</h2>
           </div>
 
           <div className="htbs-wrapper " style={{ fontSize: "20px" }}>
@@ -78,7 +85,7 @@ function App() {
               data-duration-out={100}
               className="tabs w-tabs"
             >
-              <div className="tabs-menu w-tab-menu">
+              <div className="tabs-menu w-tab-menu d-lg-flex d-xl-flex d-md-flex d-block">
                 <a
                   data-w-tab="Tab 1"
                   className="htb-tab w-inline-block w-tab-link w--current"
@@ -97,6 +104,12 @@ function App() {
                 >
                   <h6 className="htb-tab">STEP 3</h6>
                 </a>
+                <a
+                  data-w-tab="Tab 4"
+                  className="htb-tab w-inline-block w-tab-link"
+                >
+                  <h6 className="htb-tab">STEP 4</h6>
+                </a>
               </div>
               <div className="tabs-content w-tab-content">
                 <div data-w-tab="Tab 1" className="w-tab-pane w--tab-active">
@@ -112,8 +125,8 @@ function App() {
                     </div>
                     <div className="htb-text p-4">
                       <h4>Create a MetaMask Wallet</h4>
-                      <p>
-                        $BREAST token is available on the Ethereum blockchain.
+                      <p style={{ fontWeight: "bolder" }}>
+                        Hulihuli token is available on the Ethereum blockchain.
                         MetaMask is the market leader in ERC20 (Ethereum)
                         wallets. On Google Chrome, visit{" "}
                         <a href="https://metamask.io/" target="_blank">
@@ -177,15 +190,15 @@ function App() {
                     </div>
                     <div className="htb-text p-4">
                       <h4 className="heading-3">
-                        Visit SafeBreastX Swap
+                        Visit HulihuliX Swap
                         <br />
                       </h4>
                       <p>
-                        You can currently buy $BREAST on{" "}
-                        <a href="https://dex.safebreast.com" target="_blank">
-                          <strong>SafeBreastX Swap</strong>
+                        You can currently buyHulihuli on{" "}
+                        <a href="https://dex.Hulihuli.com" target="_blank">
+                          <strong>HulihuliX Swap</strong>
                         </a>
-                        , SafeBreast's official decentralized exchange where you
+                        , Hulihuli's official decentralized exchange where you
                         can swap any ERC20 token.
                         <br />
                       </p>
@@ -203,6 +216,19 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
+                    <div className="htb-text p-4">
+                      <h4 className="heading-3">
+                        Visit HulihuliX Swap
+                        <br />
+                      </h4>
+                      <p>
+                        You can currently buyHulihuli on{" "}
+                        <a href="https://dex.Hulihuli.com" target="_blank">
+                          <strong>HulihuliX Swap</strong>
+                        </a>
+                        <br />
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -216,6 +242,9 @@ function App() {
             <h1 className="text-center" style={{ color: "#a6745e" }}>
               Stats
             </h1>
+            <div className="text-center">
+              <img width="50%" height="80px" src={wood} alt="footer" />
+            </div>
             <h2 className="text-center">Tokenomics</h2>
           </div>
           <div>
@@ -225,11 +254,11 @@ function App() {
                 <div />
               </div>
               <div className="text-center col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
-                <h2>$BREAST</h2>
+                <h2>Hulihuli</h2>
                 <h4>TOKEN SYMBOL</h4>
-                <h2>$BREAST</h2>
+                <h2>Hulihuli</h2>
                 <h4>TOKEN SYMBOL</h4>
-                <h2>$BREAST</h2>
+                <h2>Hulihuli</h2>
                 <h4>TOKEN SYMBOL</h4>
               </div>
             </div>
@@ -243,18 +272,29 @@ function App() {
             <h1 className="text-center " style={{ color: "#a6745e" }}>
               Swap
             </h1>
+            <div className="text-center">
+              <img width="50%" height="80px" src={wood} alt="footer" />
+            </div>
           </div>
           <div>
             <div>
               {/* <h3 className="text-center p-5">DECENTRALIZED EXCHANGE</h3>
-              <h2 className="text-center p-5">SafeBreastX Swap</h2> */}
-              <p style={{ fontSize: "15px", padding: "0 20px" }}>
-                SafeBreastX Swap is our official decentralized exchange (DEX).
-                It gives holders the ability to swap any ERC20 token for another
+              <h2 className="text-center p-5">HulihuliX Swap</h2> */}
+              <p
+                className="_w-660   "
+                style={{
+                  fontSize: "15px",
+                  margin: "20px auto",
+                  padding: "0 20px",
+                  fontWeight: 600,
+                }}
+              >
+                HulihuliX Swap is our official decentralized exchange (DEX). It
+                gives holders the ability to swap any ERC20 token for another
                 one. It is powered by Uniswap, the safest and most trusted DEX
                 in the world. Furthermore, it acts as the foundation from which
                 we will build additional features and functionality exclusive to
-                $BREAST holders.
+                Hulihuli holders.
               </p>
             </div>
             <div
@@ -265,25 +305,41 @@ function App() {
         </div>
       </section>
       <section>
-        <div id="moonmap" className="moonmap">
-          <div className="container-1800">
-            <div className="section-heading">
-              <div
-                className="accent-large"
-                style={{ color: "#a6745e", marginBottom: "100px" }}
-              >
-                Moon
-              </div>
-              <h2 className="h2-moonmap">Roadmap</h2>
+        <div>
+          <div>
+            <h1 className="text-center " style={{ color: "#a6745e" }}>
+              Moon
+            </h1>
+            <div className="text-center">
+              <img width="50%" height="80px" src={wood} alt="footer" />
+            </div>
+            <h2 className="text-center ">Road Map</h2>
+          </div>
+          <div>
+            <div>
+              {/* <h3 className="text-center p-5">DECENTRALIZED EXCHANGE</h3>
+              <h2 className="text-center p-5">HulihuliX Swap</h2> */}
               <p
-                className="_w-660 centered "
-                style={{ fontSize: "15px", padding: "0 20px" }}
+                className="_w-660  "
+                style={{
+                  fontSize: "15px",
+                  margin: "20px auto",
+                  padding: "0 20px",
+                  fontWeight: 600,
+                }}
               >
-                $BREAST is a coin that wants to engage its community and donate
-                to charity through its different features.. All features
-                currently planned are laid out in the roadmap
+                HulihuliX Swap is our official decentralized exchange (DEX). It
+                gives holders the ability to swap any ERC20 token for another
+                one. It is powered by Uniswap, the safest and most trusted DEX
+                in the world. Furthermore, it acts as the foundation from which
+                we will build additional features and functionality exclusive to
+                Hulihuli holders.
               </p>
             </div>
+            <div
+              data-w-id="144a6b52-a9d9-1231-1db6-5ffa2cee27cf"
+              className="purple-paw-wrapper"
+            ></div>
           </div>
           <div
             data-w-id="239ab2f1-7937-e5fc-7485-1632648133f6"
@@ -316,11 +372,11 @@ function App() {
                     <img
                       src={titkimask2}
                       loading="lazy"
-                      width="164.5"
+                      width="100%"
                       alt="tikimask12"
                       className="rocket-smoke"
                     />
-                    <img
+                    {/* <img
                       src={titkimask2}
                       loading="lazy"
                       data-w-id="b901c4bf-ff2e-dbae-ab88-d6aa4c2268f2"
@@ -328,20 +384,31 @@ function App() {
                       // srcSet="images/kishu-rocket-space-p-500.png 500w, images/kishu-rocket-space.png 710w"
                       alt="tikimask"
                       className="space"
-                    />
+                    /> */}
                   </div>
                   <div className="moonmap-phase-wrapper">
                     <div className="phase">
-                      <div
-                        className="accent-small centered"
-                        style={{ color: "#a6745e" }}
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
                       >
                         PHASE 1
-                      </div>
+                      </h3>
                     </div>
                     <div className="phase-details">
                       <h6 className="phase-status in-progress">IN PROGRESS</h6>
-                      <h3 className="phase-name">Launch</h3>
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Launch
+                      </h3>
                       <div className="phase-activities">
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
@@ -355,7 +422,7 @@ function App() {
                           </p>
                         </div>
                         <div className="phase-activity-item">
-                          <p className="no-bottom-padding">✅ SafeBreastX</p>
+                          <p className="no-bottom-padding">✅ HulihuliX</p>
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
@@ -382,17 +449,28 @@ function App() {
                   </div>
                   <div className="moonmap-phase-wrapper">
                     <div className="phase">
-                      <div
-                        className="accent-small centered"
-                        style={{ color: "#a6745e" }}
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
                       >
                         PHASE 2
-                      </div>
+                      </h3>
                     </div>
                     <div className="phase-details">
                       <h6 className="phase-status"></h6>
-                      <h3 className="phase-name">Growth</h3>
-                      <div className="phase-activities">
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Growth
+                      </h3>
+                      <div className="phase-activities ">
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             • Pricetracking listings: CoinGecko and
@@ -404,7 +482,7 @@ function App() {
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Creation of SafeBreast Foundation
+                            • Creation of Hulihuli Foundation
                           </p>
                         </div>
                         <div className="phase-activity-item">
@@ -424,7 +502,7 @@ function App() {
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Passive income dashboard (SafeBreastX Swap)
+                            • Passive income dashboard (HulihuliX Swap)
                           </p>
                         </div>
                       </div>
@@ -432,20 +510,31 @@ function App() {
                   </div>
                   <div className="moonmap-phase-wrapper">
                     <div className="phase">
-                      <div
-                        className="accent-small centered"
-                        style={{ color: "#a6745e" }}
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
                       >
                         PHASE 3
-                      </div>
+                      </h3>
                     </div>
                     <div className="phase-details">
                       <h6 className="phase-status"></h6>
-                      <h3 className="phase-name">Expansion</h3>
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Expansion
+                      </h3>
                       <div className="phase-activities">
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • DAO governance structure for SafeBreast Foundation{" "}
+                            • DAO governance structure for Hulihuli Foundation{" "}
                             <br />
                           </p>
                         </div>
@@ -457,7 +546,7 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • One million dollars donated to breast cancer
+                            • One million dollars donated to Hulihuli cancer
                             awareness
                             <br />
                           </p>
@@ -465,7 +554,78 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • SafeBreast impact wallet
+                            • Hulihuli impact wallet
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Business model for sustainable development
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Expand marketing + management team
+                            <br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="moonmap-phase-wrapper">
+                    <div className="phase">
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        PHASE 4
+                      </h3>
+                    </div>
+                    <div className="phase-details">
+                      <h6 className="phase-status"></h6>
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Expansion
+                      </h3>
+
+                      <div
+                        className="phase-activities"
+                        // style={{ fontSize: "15px" }}
+                      >
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • DAO governance structure for Hulihuli Foundation{" "}
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • Celebrity foundation member(s) <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • One million dollars donated to Hulihuli cancer
+                            awareness
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Hulihuli impact wallet
                             <br />
                           </p>
                         </div>
@@ -498,7 +658,86 @@ function App() {
           <div>
             <div>
               <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                <img src={monkey1} loading="lazy" width="70%" alt="rooster" />
+                <img src={rooster} loading="lazy" width="50%" alt="rooster" />
+                {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
+              </div>
+              <div
+                style={{ backgroundColor: "#c8f7a3" }}
+                className="col-xl-5 col-lg-5 col-md-5 col-sm-12"
+              >
+                <h2>Community</h2>
+                <div className="text-center ">
+                  <img width="100%" height="50px" src={wood} alt="footer" />
+                </div>
+                <p
+                  className="_w-660"
+                  style={{ fontWeight: "bolder", fontSize: "14px" }}
+                >
+                  Feel free to reach out to anyone in the community! We would
+                  love to have you. Hulihuli Inu was founded by Chris, he will
+                  happily share info about himself with you. Link to his profile
+                  in the whitepaper{" "}
+                </p>
+                <div className="founding-members">
+                  <div className="founding-member-item">
+                    <div className="founding-member-image-container">
+                      <img
+                        src={butterfly}
+                        loading="lazy"
+                        alt="pics"
+                        className="image-16"
+                      />
+                    </div>
+                    <div className="founding-member-text">
+                      <h4>Chris</h4>
+                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
+                        Founder
+                      </p>
+                      <a
+                        href="https://t.me/Chrisli6"
+                        target="_blank"
+                        className="social-icon-item is--founder w-inline-block"
+                      >
+                        <div className="fa-social-icon is--founder"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="founding-member-item">
+                    <div className="founding-member-image-container">
+                      <img
+                        src={butterfly1}
+                        loading="lazy"
+                        alt="pics"
+                        className="image-16"
+                      />
+                    </div>
+                    <div className="founding-member-text">
+                      <h4>Telegram Community</h4>
+                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
+                        Community
+                      </p>
+                      <a
+                        href="https://t.me/Hulihuli"
+                        target="_blank"
+                        className="social-icon-item is--founder w-inline-block"
+                      >
+                        <div className="fa-social-icon is--founder"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div style={{ backgroundColor: "#c8f7a3" }}>
+          <div>
+            <div>
+              <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 ml-5 ">
+                <img src={rooster10} loading="lazy" width="50%" alt="rooster" />
                 {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
               </div>
               <div
@@ -506,18 +745,21 @@ function App() {
                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12"
               >
                 <h2>Donations</h2>
+                <div className="text-center">
+                  <img width="100%" height="50px" src={wood} alt="footer" />
+                </div>
                 <p
                   className="_w-660"
                   style={{ fontWeight: "bolder", fontSize: "14px" }}
                 >
-                  One In eight women In their lifetime will experience breast
-                  cancer. This is something the SafeBreast community cares
-                  deeply about. The more transactions on the SafeBreast network
-                  the more we are able to raise. Thus, you can help by donating
-                  to marketing wallet, or you can donate directly to the charity
-                  wallet and the SafeBreast community team will make sure to
+                  One In eight women In their lifetime will experience Hulihuli
+                  cancer. This is something the Hulihuli community cares deeply
+                  about. The more transactions on the Hulihuli network the more
+                  we are able to raise. Thus, you can help by donating to
+                  marketing wallet, or you can donate directly to the charity
+                  wallet and the Hulihuli community team will make sure to
                   donate It well on you behalf ‍ Accepted: We accept any ERC20
-                  token Preferred: $ETH, $USDC, $BREAST
+                  token Preferred: $ETH, $USDC, Hulihuli
                 </p>
                 <div className="founding-members">
                   <div className="founding-member-item">
@@ -564,95 +806,15 @@ function App() {
           </div>
         </div>
       </section>
-
       <section>
-        <div style={{ backgroundColor: "#c8f7a3" }}>
-          <div>
-            <div>
-              <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                <img src={rooster} loading="lazy" width="50%" alt="rooster" />
-                {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
-              </div>
-              <div
-                style={{ backgroundColor: "#c8f7a3" }}
-                className="col-xl-5 col-lg-5 col-md-5 col-sm-12"
-              >
-                <h2>Community</h2>
-                <p
-                  className="_w-660"
-                  style={{ fontWeight: "bolder", fontSize: "14px" }}
-                >
-                  Feel free to reach out to anyone in the community! We would
-                  love to have you. SafeBreast Inu was founded by Chris, he will
-                  happily share info about himself with you. Link to his profile
-                  in the whitepaper{" "}
-                </p>
-                <div className="founding-members">
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
-                      <img
-                        src={butterfly}
-                        loading="lazy"
-                        alt="pics"
-                        className="image-16"
-                      />
-                    </div>
-                    <div className="founding-member-text">
-                      <h4>Chris</h4>
-                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
-                        Founder
-                      </p>
-                      <a
-                        href="https://t.me/Chrisli6"
-                        target="_blank"
-                        className="social-icon-item is--founder w-inline-block"
-                      >
-                        <div className="fa-social-icon is--founder"></div>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
-                      <img
-                        src={butterfly1}
-                        loading="lazy"
-                        alt="pics"
-                        className="image-16"
-                      />
-                    </div>
-                    <div className="founding-member-text">
-                      <h4>Telegram Community</h4>
-                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
-                        Community
-                      </p>
-                      <a
-                        href="https://t.me/SafeBreast"
-                        target="_blank"
-                        className="social-icon-item is--founder w-inline-block"
-                      >
-                        <div className="fa-social-icon is--founder"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="text-center ">
+          <div className="text-center">
+            {" "}
+            <img width="80%" height="100px" src={wood} alt="footer" />
+            <h3 className="text-center w-100 ">Copyright © 2021,Encodix</h3>
           </div>
         </div>
       </section>
-
-      <div
-        style={{
-          fontSize: "30px",
-          padding: "20px",
-        }}
-      >
-        <div>
-          <p>
-            Copyright © 2021,<strong>Encodix</strong>
-          </p>
-        </div>
-      </div>
     </main>
   );
 }
