@@ -398,7 +398,7 @@ function App() {
                         PHASE 1
                       </h3>
                     </div>
-                    <div className="phase-details">
+                    <div className="phase-details" style={{ width: "100px" }}>
                       <h6 className="phase-status in-progress">IN PROGRESS</h6>
                       <h3
                         style={{
@@ -459,7 +459,12 @@ function App() {
                         PHASE 2
                       </h3>
                     </div>
-                    <div className="phase-details">
+                    <div
+                      className="phase-details"
+                      style={{
+                        width: "120px",
+                      }}
+                    >
                       <h6 className="phase-status"></h6>
                       <h3
                         style={{
@@ -473,8 +478,7 @@ function App() {
                       <div className="phase-activities ">
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Pricetracking listings: CoinGecko and
-                            CoinMarketCap
+                            • Pricetracking listings: CoinGecko
                           </p>
                         </div>
                         <div className="phase-activity-item">
@@ -521,7 +525,6 @@ function App() {
                       </h3>
                     </div>
                     <div className="phase-details">
-                      <h6 className="phase-status"></h6>
                       <h3
                         style={{
                           color: "#a6745e",
@@ -596,7 +599,7 @@ function App() {
                           fontWeight: "bolder",
                         }}
                       >
-                        Expansion
+                        Utility
                       </h3>
 
                       <div
@@ -605,23 +608,10 @@ function App() {
                       >
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • DAO governance structure for Hulihuli Foundation{" "}
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
                             • Celebrity foundation member(s) <br />
                           </p>
                         </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • One million dollars donated to Hulihuli cancer
-                            awareness
-                            <br />
-                          </p>
-                        </div>
+                        <div className="phase-activity-item"></div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
@@ -632,14 +622,122 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Business model for sustainable development
+                            • Audit of additional smart contracts
+                            <br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="moonmap-phase-wrapper">
+                    <div className="phase">
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        PHASE 5
+                      </h3>
+                    </div>
+                    <div className="phase-details">
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Utility
+                      </h3>
+
+                      <div
+                        className="phase-activities"
+                        // style={{ fontSize: "15px" }}
+                      >
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • Celebrity foundation member(s) <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item"></div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Hulihuli impact wallet
                             <br />
                           </p>
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Expand marketing + management team
+                            • Audit of additional smart contracts
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • Text here
+                            <br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="moonmap-phase-wrapper">
+                    <div className="phase">
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        PHASE 6
+                      </h3>
+                    </div>
+                    <div
+                      className="phase-details"
+                      style={{ width: "100px", overflowWrap: "break-word" }}
+                    >
+                      <h3
+                        style={{
+                          color: "#a6745e",
+                          fontSize: "22px",
+                          fontWeight: "bolder",
+                        }}
+                      >
+                        Utility
+                      </h3>
+
+                      <div
+                        className="phase-activities"
+                        // style={{ fontSize: "15px" }}
+                      >
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • Celebrity foundation member(s) <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item"></div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Hulihuli impact wallet
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            {" "}
+                            • Audit of additional smart contracts
+                            <br />
+                          </p>
+                        </div>
+                        <div className="phase-activity-item">
+                          <p className="no-bottom-padding">
+                            • New text here
                             <br />
                           </p>
                         </div>
