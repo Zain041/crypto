@@ -85,7 +85,7 @@ function App() {
               data-duration-out={100}
               className="tabs w-tabs"
             >
-              <div className="tabs-menu w-tab-menu d-lg-flex d-xl-flex d-md-flex d-block">
+              <div className="tabs-menu w-tab-menu d-lg-flex d-xl-flex d-md-flex d-sm-flex d-inline">
                 <a
                   data-w-tab="Tab 1"
                   className="htb-tab w-inline-block w-tab-link w--current"
@@ -123,7 +123,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="htb-text p-4">
+                    <div className="p-4 htb-text">
                       <h4>Create a MetaMask Wallet</h4>
                       <p style={{ fontWeight: "bolder" }}>
                         Hulihuli token is available on the Ethereum blockchain.
@@ -163,7 +163,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="htb-text p-4">
+                    <div className="p-4 htb-text">
                       <h4 className="heading-3">
                         Send $ETH to MetaMask
                         <br />
@@ -188,7 +188,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="htb-text p-4">
+                    <div className="p-4 htb-text">
                       <h4 className="heading-3">
                         Visit HulihuliX Swap
                         <br />
@@ -216,7 +216,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="htb-text p-4">
+                    <div className="p-4 htb-text">
                       <h4 className="heading-3">
                         Visit HulihuliX Swap
                         <br />
@@ -278,10 +278,10 @@ function App() {
           </div>
           <div>
             <div>
-              {/* <h3 className="text-center p-5">DECENTRALIZED EXCHANGE</h3>
-              <h2 className="text-center p-5">HulihuliX Swap</h2> */}
+              {/* <h3 className="p-5 text-center">DECENTRALIZED EXCHANGE</h3>
+              <h2 className="p-5 text-center">HulihuliX Swap</h2> */}
               <p
-                className="_w-660   "
+                className="_w-660 "
                 style={{
                   fontSize: "15px",
                   margin: "20px auto",
@@ -317,10 +317,10 @@ function App() {
           </div>
           <div>
             <div>
-              {/* <h3 className="text-center p-5">DECENTRALIZED EXCHANGE</h3>
-              <h2 className="text-center p-5">HulihuliX Swap</h2> */}
+              {/* <h3 className="p-5 text-center">DECENTRALIZED EXCHANGE</h3>
+              <h2 className="p-5 text-center">HulihuliX Swap</h2> */}
               <p
-                className="_w-660  "
+                className="_w-660 "
                 style={{
                   fontSize: "15px",
                   margin: "20px auto",
@@ -386,7 +386,10 @@ function App() {
                       className="space"
                     /> */}
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -398,7 +401,7 @@ function App() {
                         PHASE 1
                       </h3>
                     </div>
-                    <div className="phase-details" style={{ width: "100px" }}>
+                    <div className="phase-details">
                       <h6 className="phase-status in-progress">IN PROGRESS</h6>
                       <h3
                         style={{
@@ -411,8 +414,11 @@ function App() {
                       </h3>
                       <div className="phase-activities">
                         <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            ✅ Whitepaper - roadmap{" "}
+                          <p
+                            className="no-bottom-padding"
+                            style={{ wordWrap: "break-word" }}
+                          >
+                            ✅ Whitepaper - roadmap
                           </p>
                         </div>
                         <div className="phase-activity-item">
@@ -447,7 +453,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -459,12 +468,7 @@ function App() {
                         PHASE 2
                       </h3>
                     </div>
-                    <div
-                      className="phase-details"
-                      style={{
-                        width: "120px",
-                      }}
-                    >
+                    <div className="phase-details">
                       <h6 className="phase-status"></h6>
                       <h3
                         style={{
@@ -506,13 +510,16 @@ function App() {
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Passive income dashboard (HulihuliX Swap)
+                            • Passive income dashboard
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -537,20 +544,19 @@ function App() {
                       <div className="phase-activities">
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • DAO governance structure for Hulihuli Foundation{" "}
+                            • DAO governance structure
                             <br />
                           </p>
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Celebrity foundation member(s) <br />
+                            • Celebrity foundation <br />
                           </p>
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • One million dollars donated to Hulihuli cancer
-                            awareness
+                            • One million dollars to
                             <br />
                           </p>
                         </div>
@@ -564,21 +570,24 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Business model for sustainable development
+                            • Business model for
                             <br />
                           </p>
                         </div>
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Expand marketing + management team
+                            • Expand marketing +
                             <br />
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -608,7 +617,7 @@ function App() {
                       >
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Celebrity foundation member(s) <br />
+                            • Celebrity foundation <br />
                           </p>
                         </div>
                         <div className="phase-activity-item"></div>
@@ -622,14 +631,17 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Audit of additional smart contracts
+                            • Audit of additional smart
                             <br />
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -658,7 +670,7 @@ function App() {
                       >
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Celebrity foundation member(s) <br />
+                            • Celebrity foundation
                           </p>
                         </div>
                         <div className="phase-activity-item"></div>
@@ -672,7 +684,7 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Audit of additional smart contracts
+                            • Audit of additional smart
                             <br />
                           </p>
                         </div>
@@ -685,7 +697,10 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="moonmap-phase-wrapper">
+                  <div
+                    className="moonmap-phase-wrapper"
+                    style={{ width: "8.5%" }}
+                  >
                     <div className="phase">
                       <h3
                         style={{
@@ -697,10 +712,7 @@ function App() {
                         PHASE 6
                       </h3>
                     </div>
-                    <div
-                      className="phase-details"
-                      style={{ width: "100px", overflowWrap: "break-word" }}
-                    >
+                    <div className="phase-details">
                       <h3
                         style={{
                           color: "#a6745e",
@@ -717,7 +729,7 @@ function App() {
                       >
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
-                            • Celebrity foundation member(s) <br />
+                            • Celebrity foundation ) <br />
                           </p>
                         </div>
                         <div className="phase-activity-item"></div>
@@ -731,7 +743,7 @@ function App() {
                         <div className="phase-activity-item">
                           <p className="no-bottom-padding">
                             {" "}
-                            • Audit of additional smart contracts
+                            • Audit of additional smart
                             <br />
                           </p>
                         </div>
@@ -834,7 +846,7 @@ function App() {
         <div style={{ backgroundColor: "#c8f7a3" }}>
           <div>
             <div>
-              <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 ml-5 ">
+              <div className="ml-5 col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
                 <img src={rooster10} loading="lazy" width="50%" alt="rooster" />
                 {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
               </div>
@@ -869,7 +881,10 @@ function App() {
                         className="image-16"
                       />
                     </div>
-                    <div className="founding-member-text">
+                    <div
+                      className="founding-member-text"
+                      style={{ fontSize: "13px", fontWeight: "bolder" }}
+                    >
                       <a
                         href="https://etherscan.io/address/0x6ae55e8c0355a61913ff4818afbe06a17eacf005"
                         target="_blank"
@@ -888,7 +903,10 @@ function App() {
                         className="image-16"
                       />
                     </div>
-                    <div className="founding-member-text">
+                    <div
+                      className="founding-member-text"
+                      style={{ fontSize: "13px", fontWeight: "bolder" }}
+                    >
                       <a
                         href="https://etherscan.io/address/0xbd582f84fc667e3b1ef6743237b766988164a302"
                         target="_blank"
