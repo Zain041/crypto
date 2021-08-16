@@ -9,6 +9,16 @@ import titkimask from "./assets/png/tikimask2.png";
 import titkimask2 from "./assets/png/tikimask1.png";
 import wood from "./assets/png/wood.png";
 import welcome from "./assets/png/welcome.png";
+import tree1 from "./assets/png/tree1.png";
+import tree3 from "./assets/png/tree3.png";
+import liana from "./assets/png/liana.png";
+import tree2 from "./assets/png/tree2.png";
+import stone from "./assets/png/stone.png";
+
+import circle from "./assets/png/circle.png";
+import leaf from "./assets/png/leaf.png";
+import wood1 from "./assets/png/wood1.png";
+import grass from "./assets/png/grass.png";
 
 import pineapple from "./assets/png/pineapple.png";
 
@@ -20,6 +30,7 @@ import Lizard2 from "./assets/gif/lizard2.gif";
 
 import waterfall from "./assets/gif/waterfall.gif";
 import roostergif1 from "./assets/gif/roosterGif/roostergif7.gif";
+import Carousel from "./components/Carousel";
 
 // eslint-disable-next-line
 function App() {
@@ -59,7 +70,7 @@ function App() {
             viewBox="0 0 1440 320"
           >
             <path
-              fill="#c8f7a3"
+              fill="#71db4f"
               fill-opacity="1"
               d="M0,32L30,80C60,128,120,224,180,218.7C240,213,300,107,360,80C420,53,480,107,540,144C600,181,660,203,720,208C780,213,840,203,900,218.7C960,235,1020,277,1080,266.7C1140,256,1200,192,1260,176C1320,160,1380,192,1410,208L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
             ></path>
@@ -67,7 +78,13 @@ function App() {
         </div>
       </section>
 
-      <section className="p-2">
+      <section
+        className="p-2"
+        style={{
+          backgroundImage: `url(${tree1})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div>
           <div>
             <h1 className="text-center" style={{ color: "#a6745e" }}>
@@ -236,7 +253,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor: "#c8f7a3" }}>
+      <section style={{ backgroundColor: "#71db4f" }}>
         <div>
           <div className="">
             <h1 className="text-center" style={{ color: "#a6745e" }}>
@@ -266,7 +283,12 @@ function App() {
         </div>
       </section>
 
-      <section>
+      <section
+        style={{
+          backgroundImage: `url(${leaf})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div>
           <div>
             <h1 className="text-center " style={{ color: "#a6745e" }}>
@@ -283,7 +305,7 @@ function App() {
               <p
                 className="_w-660 "
                 style={{
-                  fontSize: "15px",
+                  fontSize: "20px",
                   margin: "20px auto",
                   padding: "0 20px",
                   fontWeight: 600,
@@ -304,7 +326,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section>
+      <section
+        style={{
+          backgroundImage: `url(${tree3})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div>
           <div>
             <h1 className="text-center " style={{ color: "#a6745e" }}>
@@ -322,7 +349,7 @@ function App() {
               <p
                 className="_w-660 "
                 style={{
-                  fontSize: "15px",
+                  fontSize: "20px",
                   margin: "20px auto",
                   padding: "0 20px",
                   fontWeight: 600,
@@ -341,497 +368,103 @@ function App() {
               className="purple-paw-wrapper"
             ></div>
           </div>
-          <div
-            data-w-id="239ab2f1-7937-e5fc-7485-1632648133f6"
-            className="moonmap-scrolling-wrapper"
-          >
-            <div className="moonmap-horiztonal-scrolling-container">
-              <div className="sticky-container horizontal">
-                <div
-                  data-w-id="942a9278-044b-0f8a-f7c5-75c5c9d7c39a"
-                  className="flex-horizontal"
-                >
-                  <div className="kishu-rocket-wrapper">
-                    <img
-                      src={rooster1}
-                      loading="lazy"
-                      sizes="(max-width: 479px) 335.99609375px, (max-width: 1919px) 593.828125px, 37vw"
-                      // srcSet="images/kishu-rocket-alone-p-500.png 500w, images/kishu-rocket-alone.png 791w"
-                      alt="rooster4"
-                      className="kishu-rocket"
-                    />
-
-                    {/* <img
-                      src={rooster2}
-                      loading="lazy"
-                      srcSet="images/kishu-rocket-trail-p-500.png 500w, images/kishu-rocket-trail-p-800.png 800w, images/kishu-rocket-trail.png 805w"
-                      // sizes="(max-width: 479px) 100vw, (max-width: 1919px) 671.9921875px, 42vw"
-                      alt="tikimask"
-                      className="rocket-trail"
-                    /> */}
-                    <img
-                      src={titkimask2}
-                      loading="lazy"
-                      width="100%"
-                      alt="tikimask12"
-                      className="rocket-smoke"
-                    />
-                    {/* <img
-                      src={titkimask2}
-                      loading="lazy"
-                      data-w-id="b901c4bf-ff2e-dbae-ab88-d6aa4c2268f2"
-                      sizes="(max-width: 479px) 335.99609375px, (max-width: 1919px) 671.9921875px, 710px"
-                      // srcSet="images/kishu-rocket-space-p-500.png 500w, images/kishu-rocket-space.png 710w"
-                      alt="tikimask"
-                      className="space"
-                    /> */}
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 1
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h6 className="phase-status in-progress">IN PROGRESS</h6>
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Launch
-                      </h3>
-                      <div className="phase-activities">
-                        <div className="phase-activity-item">
-                          <p
-                            className="no-bottom-padding"
-                            style={{ wordWrap: "break-word" }}
-                          >
-                            ✅ Whitepaper - roadmap
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            ✅ Website launch
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">✅ HulihuliX</p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Techrate - contract audit{" "}
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Marketing campaign
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Partnership global organization
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Community marketing fund
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 2
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h6 className="phase-status"></h6>
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Growth
-                      </h3>
-                      <div className="phase-activities ">
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Pricetracking listings: CoinGecko
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">• Cex listings</p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Creation of Hulihuli Foundation
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          {/*  */}
-                          <p className="no-bottom-padding">• First donations</p>
-                        </div>
-                        <div className="phase-activity-item">
-                          {/*  */}
-                          <p className="no-bottom-padding">
-                            • Expand development team
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • SafeArt (NFT marketplace)
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Passive income dashboard
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 3
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Expansion
-                      </h3>
-                      <div className="phase-activities">
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • DAO governance structure
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Celebrity foundation <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • One million dollars to
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Hulihuli impact wallet
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Business model for
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Expand marketing +
-                            <br />
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 4
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h6 className="phase-status"></h6>
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Utility
-                      </h3>
-
-                      <div
-                        className="phase-activities"
-                        // style={{ fontSize: "15px" }}
-                      >
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Celebrity foundation <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item"></div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Hulihuli impact wallet
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Audit of additional smart
-                            <br />
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 5
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Utility
-                      </h3>
-
-                      <div
-                        className="phase-activities"
-                        // style={{ fontSize: "15px" }}
-                      >
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Celebrity foundation
-                          </p>
-                        </div>
-                        <div className="phase-activity-item"></div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Hulihuli impact wallet
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Audit of additional smart
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Text here
-                            <br />
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="moonmap-phase-wrapper"
-                    style={{ width: "8.5%" }}
-                  >
-                    <div className="phase">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        PHASE 6
-                      </h3>
-                    </div>
-                    <div className="phase-details">
-                      <h3
-                        style={{
-                          color: "#a6745e",
-                          fontSize: "22px",
-                          fontWeight: "bolder",
-                        }}
-                      >
-                        Utility
-                      </h3>
-
-                      <div
-                        className="phase-activities"
-                        // style={{ fontSize: "15px" }}
-                      >
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • Celebrity foundation ) <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item"></div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Hulihuli impact wallet
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            {" "}
-                            • Audit of additional smart
-                            <br />
-                          </p>
-                        </div>
-                        <div className="phase-activity-item">
-                          <p className="no-bottom-padding">
-                            • New text here
-                            <br />
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section>
-        <div style={{ backgroundColor: "#c8f7a3" }}>
+      <section
+        style={{
+          marginBottom: "30px",
+          backgroundImage: `url(${tree3})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div style={{ backgroundColor: "#71db4f" }}>
           <div>
-            <div>
-              <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                <img src={rooster} loading="lazy" width="50%" alt="rooster" />
-                {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
+            <div className="d-lg-flex">
+              <div className="text-center col-xl-6 col-lg-6 col-md-12 col-sm-12 pull-left">
+                <img src={rooster10} width="40%" alt="rooster" />
               </div>
               <div
-                style={{ backgroundColor: "#c8f7a3" }}
-                className="col-xl-5 col-lg-5 col-md-5 col-sm-12"
+                style={{
+                  backgroundColor: "#71db4f",
+                }}
+                className=" col-xl-5 col-lg-5 col-md-12 col-sm-12 pull-right"
               >
-                <h2>Community</h2>
+                <h2 className="text-center m-5">Community</h2>
                 <div className="text-center ">
                   <img width="100%" height="50px" src={wood} alt="footer" />
                 </div>
                 <p
-                  className="_w-660"
-                  style={{ fontWeight: "bolder", fontSize: "14px" }}
+                  style={{
+                    fontWeight: "bolder",
+                    fontSize: "20px",
+                    margin: "13px",
+                    marginRight: "20px",
+                  }}
                 >
                   Feel free to reach out to anyone in the community! We would
                   love to have you. Hulihuli Inu was founded by Chris, he will
                   happily share info about himself with you. Link to his profile
                   in the whitepaper{" "}
                 </p>
-                <div className="founding-members">
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
+                <div>
+                  <div className="d-flex">
+                    <div>
                       <img
                         src={butterfly}
                         loading="lazy"
                         alt="pics"
-                        className="image-16"
+                        width="40px"
                       />
                     </div>
-                    <div className="founding-member-text">
-                      <h4>Chris</h4>
-                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
+                    <div>
+                      <h3>Chris</h3>
+                      <p style={{ fontWeight: "bolder", fontSize: "20px" }}>
                         Founder
                       </p>
                       <a
                         href="https://t.me/Chrisli6"
                         target="_blank"
-                        className="social-icon-item is--founder w-inline-block"
+                        style={{
+                          backgroundColor: "#d49e6c",
+                          padding: "15px",
+                          borderRadius: "50%",
+                        }}
                       >
-                        <div className="fa-social-icon is--founder"></div>
+                        <i
+                          class="far fa-paper-plane"
+                          style={{ fontSize: "20px" }}
+                        ></i>
                       </a>
                     </div>
                   </div>
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
+                  <div className="d-flex">
+                    <div>
                       <img
                         src={butterfly1}
                         loading="lazy"
                         alt="pics"
-                        className="image-16"
+                        width="40px"
                       />
                     </div>
-                    <div className="founding-member-text">
-                      <h4>Telegram Community</h4>
-                      <p style={{ fontWeight: "bolder", fontSize: "14px" }}>
+                    <div>
+                      <h3>Telegram Community</h3>
+                      <p style={{ fontWeight: "bolder", fontSize: "20px" }}>
                         Community
                       </p>
                       <a
                         href="https://t.me/Hulihuli"
                         target="_blank"
-                        className="social-icon-item is--founder w-inline-block"
+                        style={{
+                          backgroundColor: "#d49e6c",
+                          padding: "15px",
+                          borderRadius: "50%",
+                        }}
                       >
-                        <div className="fa-social-icon is--founder"></div>
+                        <i
+                          class="far fa-paper-plane"
+                          style={{ fontSize: "20px" }}
+                        ></i>
                       </a>
                     </div>
                   </div>
@@ -843,94 +476,33 @@ function App() {
       </section>
 
       <section>
-        <div style={{ backgroundColor: "#c8f7a3" }}>
-          <div>
-            <div>
-              <div className="ml-5 col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
-                <img src={rooster10} loading="lazy" width="50%" alt="rooster" />
-                {/* <img src="images/08-v2-big.gif" loading="lazy" alt='pics' className="image-21" /> */}
-              </div>
-              <div
-                style={{ backgroundColor: "#c8f7a3" }}
-                className="col-xl-5 col-lg-5 col-md-5 col-sm-12"
-              >
-                <h2>Donations</h2>
-                <div className="text-center">
-                  <img width="100%" height="50px" src={wood} alt="footer" />
-                </div>
-                <p
-                  className="_w-660"
-                  style={{ fontWeight: "bolder", fontSize: "14px" }}
-                >
-                  One In eight women In their lifetime will experience Hulihuli
-                  cancer. This is something the Hulihuli community cares deeply
-                  about. The more transactions on the Hulihuli network the more
-                  we are able to raise. Thus, you can help by donating to
-                  marketing wallet, or you can donate directly to the charity
-                  wallet and the Hulihuli community team will make sure to
-                  donate It well on you behalf ‍ Accepted: We accept any ERC20
-                  token Preferred: $ETH, $USDC, Hulihuli
-                </p>
-                <div className="founding-members">
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
-                      <img
-                        src={Lizard2}
-                        loading="lazy"
-                        alt="pics"
-                        className="image-16"
-                      />
-                    </div>
-                    <div
-                      className="founding-member-text"
-                      style={{ fontSize: "13px", fontWeight: "bolder" }}
-                    >
-                      <a
-                        href="https://etherscan.io/address/0x6ae55e8c0355a61913ff4818afbe06a17eacf005"
-                        target="_blank"
-                        className="cta-button red-button w-button"
-                      >
-                        Charity Wallet
-                      </a>
-                    </div>
-                  </div>
-                  <div className="founding-member-item">
-                    <div className="founding-member-image-container">
-                      <img
-                        src={frog}
-                        loading="lazy"
-                        alt="pics"
-                        className="image-16"
-                      />
-                    </div>
-                    <div
-                      className="founding-member-text"
-                      style={{ fontSize: "13px", fontWeight: "bolder" }}
-                    >
-                      <a
-                        href="https://etherscan.io/address/0xbd582f84fc667e3b1ef6743237b766988164a302"
-                        target="_blank"
-                        className="chuddar-button cta-button red-button w-button"
-                      >
-                        Marketing Wallet
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
         <div className="text-center ">
           <div className="text-center">
             {" "}
-            <img width="80%" height="100px" src={wood} alt="footer" />
-            <h3 className="text-center w-100 ">Copyright © 2021,Encodix</h3>
+            <img
+              style={{ marginTop: "50px" }}
+              width="80%"
+              height="200px"
+              src={grass}
+              alt="footer"
+            />
+            <img
+              style={{ marginTop: "50px" }}
+              width="80%"
+              height="100px"
+              src={wood}
+              alt="footer"
+            />
+            <h4
+              className="text-center w-100 "
+              style={{ backgroundColor: "#d49e6c", padding: "10px" }}
+            >
+              Copyright © 2021,Encodix
+            </h4>
           </div>
         </div>
       </section>
+      {/* <Carousel /> */}
     </main>
   );
 }
