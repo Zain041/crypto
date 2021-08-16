@@ -1,147 +1,153 @@
-import React from "react";
+import React, { Component } from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./carousel.css";
-const Carousel = () => {
-  return (
-    <section class="teams" style="width:100%;">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div id="customers-teams" class="owl-carousel">
-              <div class="item">
-                <div class="shadow-effect">
-                  <img
-                    class="img-circle"
-                    src="http://homedroidtech.com/assets/images/team/ankurgupta.jpeg"
-                    alt="ankurgupta"
-                  />
-                  <h2>Ankur Gupta</h2>
-                  <p class="title">Director, Founder & CEO</p>
-                  <div id="pastexp">
-                    <h5 id="pastexphead">RESEARCH SCHOLAR</h5>
-                    <p>Dept. of CSE</p>
-                    <p style="margin-top:-5px;">
-                      Indian Institute of Technology (IIT) Roorkee
-                    </p>
-                  </div>
-                  <div class="social-icons" id="teamsocial">
-                    <a
-                      class="social-icon social-icon--facebook"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/c9JxYPS.png" />
-                    </a>
+export class Owldemo1 extends Component {
+  state = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  };
+  render() {
+    return (
+      <div>
+        <div class="container-fluid">
+          <div className="row title" style={{ marginBottom: "20px" }}>
+            <div
+              class="col-sm-12 btn btn-info"
+              style={{
+                color: "white",
 
-                    <a class="social-icon social-icon--twitter" id="socialicon">
-                      <img src="https://i.imgur.com/VHB4APa.png" />
-                    </a>
-                    <a
-                      class="social-icon social-icon--linkedin"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/egfJ4V2.png" />
-                    </a>
-
-                    <a
-                      class="social-icon social-icon--instagram"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/cgH07pQ.png" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="shadow-effect">
-                  <img
-                    class="img-circle"
-                    src="http://homedroidtech.com/assets/images/team/sushilgupta.jpeg"
-                    alt="ankurgupta"
-                  />
-                  <h2>Sushil Gupta</h2>
-                  <p class="title">Co-Founder & Managing Director</p>
-                  <div id="pastexp">
-                    <h5 id="pastexphead">EMBEDDED EXPERT</h5>
-                    <p>20+ Years of Experience</p>
-                    <p style="margin-top:-5px;">Businessman</p>
-                  </div>
-                  <div class="social-icons" id="teamsocial">
-                    <a
-                      class="social-icon social-icon--facebook"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/c9JxYPS.png" />
-                    </a>
-
-                    <a class="social-icon social-icon--twitter" id="socialicon">
-                      <img src="https://i.imgur.com/VHB4APa.png" />
-                    </a>
-                    <a
-                      class="social-icon social-icon--linkedin"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/egfJ4V2.png" />
-                    </a>
-
-                    <a
-                      class="social-icon social-icon--instagram"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/cgH07pQ.png" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="shadow-effect">
-                  <img
-                    class="img-circle"
-                    src="http://homedroidtech.com/assets/images/team/parveen.jpeg"
-                    alt="ankurgupta"
-                  />
-                  <h2>Parveen Kumar</h2>
-                  <p class="title">Member, Technical Advisory Board</p>
-                  <div id="pastexp">
-                    <h5 id="pastexphead">ASSISTANT PROFESSOR</h5>
-                    <p>Dept. of CSE</p>
-                    <p style="margin-top:-5px;">
-                      National Institute of Technology (NIT) Uttarakhand
-                    </p>
-                  </div>
-                  <div class="social-icons" id="teamsocial">
-                    <a
-                      class="social-icon social-icon--facebook"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/c9JxYPS.png " />
-                    </a>
-
-                    <a class="social-icon social-icon--twitter" id="socialicon">
-                      <img src="https://i.imgur.com/VHB4APa.png" />
-                    </a>
-                    <a
-                      class="social-icon social-icon--linkedin"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/egfJ4V2.png" />
-                    </a>
-
-                    <a
-                      class="social-icon social-icon--instagram"
-                      id="socialicon"
-                    >
-                      <img src="https://i.imgur.com/cgH07pQ.png" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+                border: "none",
+                backgroundColor: "transparent",
+              }}
+            >
+              <h2 className="text-center p-text">Phase Section</h2>
             </div>
           </div>
         </div>
+        <div class="container-fluid">
+          <OwlCarousel
+            items={3}
+            className="owl-theme"
+            loop
+            nav
+            margin={8}
+            autoPlay={true}
+            responsive={this.state.responsive}
+          >
+            <div className="phase1">
+              <div className="p-5">
+                <h4 style={{ fontWeight: "bolder", marginBottom: "30px" }}>
+                  Phase one : Elments{" "}
+                  <span style={{ color: "black" }}> 2020</span>
+                </h4>
+                <div
+                  style={{
+                    fontSize: "13px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>
+                    <i
+                      class="far fa-check-circle"
+                      style={{
+                        color: "white",
+                        backgroundColor: "green",
+                        borderRadius: "50%",
+                      }}
+                    ></i>
+                  </p>
+                  <p style={{ marginLeft: "10px" }}>AMM Development</p>
+                </div>
+                <div
+                  style={{
+                    fontSize: "13px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>
+                    <i
+                      class="far fa-check-circle"
+                      style={{
+                        color: "white",
+                        backgroundColor: "green",
+                        borderRadius: "50%",
+                      }}
+                    ></i>
+                  </p>
+                  <p style={{ marginLeft: "10px" }}>AMM Development</p>
+                </div>{" "}
+                <div
+                  style={{
+                    fontSize: "13px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>
+                    <i
+                      class="far fa-check-circle"
+                      style={{
+                        color: "white",
+                        backgroundColor: "green",
+                        borderRadius: "50%",
+                      }}
+                    ></i>
+                  </p>
+                  <p style={{ marginLeft: "10px" }}>AMM Development</p>
+                </div>{" "}
+                <div
+                  style={{
+                    fontSize: "13px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>
+                    <i
+                      class="far fa-check-circle"
+                      style={{
+                        color: "white",
+                        backgroundColor: "green",
+                        borderRadius: "50%",
+                      }}
+                    ></i>
+                  </p>
+                  <p style={{ marginLeft: "10px" }}>AMM Development</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+                style={{ height: "60%", width: "100%" }}
+              >
+                <path
+                  fill="#ad6e47"
+                  fill-opacity="1"
+                  d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,96C672,64,768,32,864,26.7C960,21,1056,43,1152,69.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+            </div>
+          </OwlCarousel>
+        </div>
       </div>
-    </section>
-  );
-};
+    );
+  }
+}
 
-export default Carousel;
+export default Owldemo1;

@@ -10,7 +10,7 @@
 }
 body {
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 1em;
   line-height: 20px;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 35px;
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 6.25em;
   line-height: 90%;
   font-weight: 500;
@@ -31,7 +31,7 @@ h1 {
 
 h2 {
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 4.69em;
   line-height: 90%;
   font-weight: 400;
@@ -41,7 +41,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 35px;
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 3.13em;
   line-height: 100%;
   font-weight: 400;
@@ -51,7 +51,7 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 1.82em;
   line-height: 110%;
   font-weight: 400;
@@ -61,7 +61,7 @@ h5 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 1.56em;
   line-height: 140%;
   font-weight: 400;
@@ -73,7 +73,7 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 0.78em;
   line-height: 21px;
   font-weight: 700;
@@ -82,7 +82,7 @@ h6 {
 
 p {
   font-family: "Righteous", cursive;
-  color: #a6745e;
+  color: white;
   font-size: 1.04em;
   line-height: 1.82em;
   font-weight: 300;
@@ -173,7 +173,7 @@ a.w--current {
   display: block;
   height: 1px;
   margin-top: 2px;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .navbar .cta-button {
@@ -186,7 +186,7 @@ a.w--current {
   margin-right: 30px;
   padding: 18px 40px;
   border-radius: 120px;
-  background-color: #a6745e;
+  background-color: white;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   font-family: Poppins, sans-serif;
@@ -197,7 +197,7 @@ a.w--current {
 }
 
 .cta-button:hover {
-  background-color: #a6745e;
+  background-color: white;
   box-shadow: 6px 6px 13px 0 rgba(0, 0, 0, 0.18);
   -webkit-transform: translate(0px, -8px);
   -ms-transform: translate(0px, -8px);
@@ -210,9 +210,9 @@ a.w--current {
   padding: 16px 40px;
   border-style: solid;
   border-width: 1px;
-  border-color: #a6745e;
+  border-color: white;
   background-color: transparent;
-  color: #a6745e;
+  color: white;
   line-height: 100%;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -221,15 +221,15 @@ a.w--current {
 }
 
 .cta-button.ghost-button:hover {
-  border-color: #a6745e;
-  background-color: #a6745e;
-  color: #a6745e;
+  border-color: white;
+  background-color: white;
+  color: white;
 }
 
 .cta-button.ghost-button.inverse-ghost {
   padding: 16.5px 34px 14.5px;
-  border-color: #a6745e;
-  color: #a6745e;
+  border-color: white;
+  color: white;
   line-height: 105%;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -237,37 +237,37 @@ a.w--current {
 }
 
 .cta-button.ghost-button.inverse-ghost:hover {
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .cta-button.inverse-button {
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .cta-button.inverse-button:hover {
   background-color: #c6b48b;
-  color: #a6745e;
+  color: white;
 }
 
 .cta-button.red {
-  background-color: #a6745e;
+  background-color: white;
   opacity: 1;
 }
 
 .cta-button.red-button {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .cta-button.red-button:hover {
-  background-color: #a6745e;
+  background-color: white;
   box-shadow: 6px 6px 13px 1px rgba(0, 0, 0, 0.12);
 }
 
 .caption {
   margin-top: 4px;
-  color: #a6745e;
+  color: white;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
@@ -276,9 +276,9 @@ a.w--current {
 .stylename {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-top: 1px solid #a6745e;
-  border-bottom: 0px none #a6745e;
-  color: #a6745e;
+  border-top: 1px solid white;
+  border-bottom: 0px none white;
+  color: white;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -293,7 +293,7 @@ a.w--current {
   position: relative;
   left: 96px;
   margin-left: 100px;
-  color: #a6745e;
+  color: white;
   font-size: 32px;
   line-height: 134%;
   font-weight: 600;
@@ -312,7 +312,7 @@ a.w--current {
 
 .styletitle {
   margin: 20px 15px 30px;
-  border-bottom: 1px solid #a6745e;
+  border-bottom: 1px solid white;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -330,13 +330,13 @@ a.w--current {
 .flexcolwrap.inversecolors {
   padding-top: 26px;
   padding-bottom: 0px;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .flexcolwrap.inversecolors {
   padding-top: 26px;
   padding-bottom: 0px;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .colorbox {
@@ -351,7 +351,7 @@ a.w--current {
 }
 
 .colorbox.lightgreycolor {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .heading-img {
@@ -360,40 +360,40 @@ a.w--current {
 }
 
 .colorbox.brandmaincolor {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .colorbox.darkgreycolor {
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .colorbox.blackcolor {
   margin-left: 0px;
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .colorbox.darkgreycolor {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .colorbox.brandmaincolor {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .colorbox.brand2ndcolor {
-  background-color: #a6745e;
+  background-color: white;
   background-clip: border-box;
 }
 
 .colorbox.darkpurple-text {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .small-p {
   margin-bottom: 10px;
-  color: #a6745e;
+  color: white;
   font-size: 11px;
   line-height: 130%;
 }
@@ -405,7 +405,7 @@ a.w--current {
 
 .invese-link {
   display: inline;
-  color: #a6745e;
+  color: white;
   font-size: 16px;
   line-height: 106%;
   font-weight: 700;
@@ -426,11 +426,11 @@ a.w--current {
 }
 
 .coldummycolor {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .invese-link-2 {
-  color: #a6745e;
+  color: white;
 }
 
 .cta-button-2 {
@@ -438,7 +438,7 @@ a.w--current {
   height: 40px;
   padding: 8px 16px;
   border-radius: 100px;
-  background-color: #a6745e;
+  background-color: white;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   font-family: Poppins, sans-serif;
@@ -451,7 +451,7 @@ a.w--current {
 
 .cta-button-2:hover {
   background-color: #3278e4;
-  color: #a6745e;
+  color: white;
 }
 
 .cta-button-2.ghost-button {
@@ -462,33 +462,33 @@ a.w--current {
 
 .cta-button-2.ghost-button:hover {
   border-color: #25bcca;
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .cta-button-2.ghost-button.inverse-ghost {
-  border-color: #a6745e;
-  color: #a6745e;
+  border-color: white;
+  color: white;
 }
 
 .cta-button-2.ghost-button.inverse-ghost:hover {
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .cta-button-2.inverse-button {
-  background-color: #a6745e;
-  color: #a6745e;
+  background-color: white;
+  color: white;
 }
 
 .cta-button-2.inverse-button:hover {
   background-color: #2d6ac7;
-  color: #a6745e;
+  color: white;
 }
 
 .small-p-2 {
   margin-bottom: 10px;
-  color: #a6745e;
+  color: white;
   font-size: 15px;
   line-height: 25px;
 }
@@ -518,7 +518,7 @@ a.w--current {
 
 .capitals.nav-link {
   font-family: Poppins, sans-serif;
-  color: #a6745e;
+  color: white;
   font-size: 14px;
   font-weight: 400;
 }
@@ -529,7 +529,7 @@ a.w--current {
 
 .capitals.nav-link.is--back-to-top {
   display: block;
-  color: #a6745e;
+  color: white;
 }
 
 .capitals.nav-link.is--back-to-top.w--current {
@@ -716,7 +716,7 @@ a.w--current {
 }
 
 .why-kishu-link {
-  color: #a6745e;
+  color: white;
 }
 
 .arrow.is--down {
@@ -731,7 +731,7 @@ a.w--current {
 .why-kishu {
   position: relative;
   z-index: 0;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .hero-graphics-wrapper {
@@ -1351,7 +1351,7 @@ a.w--current {
 }
 
 .re-button {
-  background: #a6745e !important;
+  background: white !important;
 }
 
 .chuddar-button {
@@ -1417,7 +1417,7 @@ a.w--current {
 }
 
 .purple {
-  color: #a6745e;
+  color: white;
   font-size: 0.94em;
   line-height: 140%;
 }
@@ -1552,7 +1552,7 @@ a.w--current {
 
 .stats {
   margin-top: 4em;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .tabs-menu {
@@ -1606,7 +1606,7 @@ a.w--current {
 
 .htb-tab {
   background-color: transparent;
-  color: #a6745e;
+  color: white;
 }
 
 .htb-tab.w--current {
@@ -1648,7 +1648,7 @@ a.w--current {
   -ms-transform: rotate(6.13deg);
   transform: rotate(6.13deg);
   font-family: Poppins, sans-serif;
-  color: #a6745e;
+  color: white;
   font-size: 1.82em;
   line-height: 1.46em;
   text-align: center;
@@ -1785,7 +1785,7 @@ a.w--current {
 }
 
 .red {
-  color: #a6745e;
+  color: white;
 }
 
 .red.is--tokenomics {
@@ -2032,7 +2032,7 @@ a.w--current {
 
 .phase-tab {
   background-color: transparent;
-  color: #a6745e;
+  color: white;
 }
 
 .phase-tab.w--current {
@@ -2061,7 +2061,7 @@ a.w--current {
   top: 4em;
   bottom: 4em;
   height: 66em;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .founding-team-img {
@@ -2353,7 +2353,7 @@ a.w--current {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #a6745e;
+  background-color: white;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   cursor: pointer;
@@ -2406,7 +2406,7 @@ a.w--current {
 }
 
 .white {
-  color: #a6745e;
+  color: white;
 }
 
 .mobile-scroll-container {
@@ -2447,7 +2447,7 @@ a.w--current {
 }
 
 .dropdown-list {
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .dropdown-list.w--open {
@@ -2482,7 +2482,7 @@ a.w--current {
 }
 
 .phase-status.in-progress {
-  color: #a6745e;
+  color: white;
 }
 
 .google-translator {
@@ -2589,7 +2589,7 @@ a.w--current {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #a6745e;
+  background-color: white;
 }
 
 .image-22 {
@@ -2778,7 +2778,7 @@ a.w--current {
   }
 
   .capitals.nav-link {
-    color: #a6745e;
+    color: white;
     font-size: 18px;
     text-align: right;
   }

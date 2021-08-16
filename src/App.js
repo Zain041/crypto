@@ -9,9 +9,12 @@ import titkimask from "./assets/png/tikimask2.png";
 import titkimask2 from "./assets/png/tikimask1.png";
 import wood from "./assets/png/wood.png";
 import welcome from "./assets/png/welcome.png";
-import tree1 from "./assets/png/tree1.png";
+import tree1 from "./assets/png/tree4.png";
 import tree3 from "./assets/png/tree3.png";
 import liana from "./assets/png/liana.png";
+import liana1 from "./assets/png/lian1.png";
+import liana2 from "./assets/png/liana2.png";
+
 import tree2 from "./assets/png/tree2.png";
 import stone from "./assets/png/stone.png";
 
@@ -49,7 +52,7 @@ function App() {
     run();
   }, []);
   return (
-    <main>
+    <main style={{ overflowX: "hidden" }}>
       <section className="front-page w-row">
         <div
           style={{
@@ -58,6 +61,30 @@ function App() {
             position: "relative",
           }}
         >
+          <img
+            style={{ position: "absolute", top: "0px", right: "0px" }}
+            src={liana1}
+            alt="rooster"
+            width="350px"
+          />
+          <img
+            style={{ position: "absolute", top: "0px" }}
+            src={liana1}
+            alt="rooster"
+            width="350px"
+          />
+          <img
+            style={{ position: "absolute", top: "0px", left: "50%" }}
+            src={liana1}
+            alt="rooster"
+            width="350px"
+          />
+          <img
+            style={{ position: "absolute", top: "0px", left: "28%" }}
+            src={liana1}
+            alt="rooster"
+            width="350px"
+          />
           <img
             style={{ position: "absolute", top: "0px" }}
             src={roostergif1}
@@ -70,7 +97,7 @@ function App() {
             viewBox="0 0 1440 320"
           >
             <path
-              fill="#71db4f"
+              fill="#357335"
               fill-opacity="1"
               d="M0,32L30,80C60,128,120,224,180,218.7C240,213,300,107,360,80C420,53,480,107,540,144C600,181,660,203,720,208C780,213,840,203,900,218.7C960,235,1020,277,1080,266.7C1140,256,1200,192,1260,176C1320,160,1380,192,1410,208L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
             ></path>
@@ -81,15 +108,20 @@ function App() {
       <section
         className="p-2"
         style={{
-          backgroundImage: `url(${tree1})`,
+          backgroundImage: `url(${pineapple})`,
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div>
+        <div
+          style={{
+            backgroundImage: `url(${tree1})`,
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <div>
-            <h1 className="text-center" style={{ color: "#a6745e" }}>
+            <h2 className="text-center" style={{ color: "white" }}>
               Buy
-            </h1>
+            </h2>
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
@@ -147,7 +179,9 @@ function App() {
                         MetaMask is the market leader in ERC20 (Ethereum)
                         wallets. On Google Chrome, visit{" "}
                         <a href="https://metamask.io/" target="_blank">
-                          <strong>metamask.io</strong>
+                          <strong style={{ color: "black" }}>
+                            metamask.io
+                          </strong>
                         </a>{" "}
                         to download the extension and set up a wallet. On
                         mobile? Get MetaMask's app for{" "}
@@ -155,14 +189,14 @@ function App() {
                           href="https://metamask.app.link/skAH3BaF99"
                           target="_blank"
                         >
-                          <strong>iPhone</strong>
+                          <strong style={{ color: "black" }}>iPhone</strong>
                         </a>{" "}
                         or{" "}
                         <a
                           href="https://metamask.app.link/bxwkE8oF99"
                           target="_blank"
                         >
-                          <strong>Android</strong>
+                          <strong style={{ color: "black" }}>Android</strong>
                         </a>
                         .
                       </p>
@@ -213,7 +247,9 @@ function App() {
                       <p>
                         You can currently buyHulihuli on{" "}
                         <a href="https://dex.Hulihuli.com" target="_blank">
-                          <strong>HulihuliX Swap</strong>
+                          <strong style={{ color: "black" }}>
+                            HulihuliX Swap
+                          </strong>
                         </a>
                         , Hulihuli's official decentralized exchange where you
                         can swap any ERC20 token.
@@ -241,7 +277,9 @@ function App() {
                       <p>
                         You can currently buyHulihuli on{" "}
                         <a href="https://dex.Hulihuli.com" target="_blank">
-                          <strong>HulihuliX Swap</strong>
+                          <strong style={{ color: "black" }}>
+                            HulihuliX Swap
+                          </strong>
                         </a>
                         <br />
                       </p>
@@ -253,18 +291,23 @@ function App() {
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor: "#71db4f" }}>
+      <section
+        style={{
+          backgroundImage: `url(${circle})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div>
           <div className="">
-            <h1 className="text-center" style={{ color: "#a6745e" }}>
+            <h2 className="text-center" style={{ color: "white" }}>
               Stats
-            </h1>
+            </h2>
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
             <h2 className="text-center">Tokenomics</h2>
           </div>
-          <div>
+          <div style={{ backgroundImage: `url(${tree1})` }}>
             <div className="d-lg-flex d-md-flex align-items-center">
               <div className="col-lg-7 col-xl-7 col-md-7 col-sm-12">
                 <img src={rooster7} alt="rooster1" width="90%" />
@@ -291,9 +334,9 @@ function App() {
       >
         <div>
           <div>
-            <h1 className="text-center " style={{ color: "#a6745e" }}>
+            <h2 className="text-center " style={{ color: "white" }}>
               Swap
-            </h1>
+            </h2>
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
@@ -328,15 +371,15 @@ function App() {
       </section>
       <section
         style={{
-          backgroundImage: `url(${tree3})`,
+          backgroundImage: `url(${circle})`,
           backgroundRepeat: "no-repeat",
         }}
       >
         <div>
           <div>
-            <h1 className="text-center " style={{ color: "#a6745e" }}>
+            <h2 className="text-center " style={{ color: "white" }}>
               Moon
-            </h1>
+            </h2>
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
@@ -370,28 +413,31 @@ function App() {
           </div>
         </div>
       </section>
+      <section style={{ marginBottom: "100px" }}>
+        <Carousel />
+      </section>
 
       <section
         style={{
           marginBottom: "30px",
-          backgroundImage: `url(${tree3})`,
-          backgroundRepeat: "no-repeat",
         }}
       >
-        <div style={{ backgroundColor: "#71db4f" }}>
+        <div style={{ backgroundColor: "transparent" }}>
           <div>
-            <div className="d-lg-flex">
+            <div>
               <div className="text-center col-xl-6 col-lg-6 col-md-12 col-sm-12 pull-left">
                 <img src={rooster10} width="40%" alt="rooster" />
               </div>
               <div
                 style={{
-                  backgroundColor: "#71db4f",
+                  backgroundColor: "#357335",
+                  backgroundImage: `url(${tree3})`,
+                  backgroundRepeat: "no-repeat",
                 }}
                 className=" col-xl-5 col-lg-5 col-md-12 col-sm-12 pull-right"
               >
-                <h2 className="text-center m-5">Community</h2>
-                <div className="text-center ">
+                <h2 className="text-center ">Community</h2>
+                <div className="text-center " style={{ marginRight: "60px" }}>
                   <img width="100%" height="50px" src={wood} alt="footer" />
                 </div>
                 <p
@@ -399,7 +445,7 @@ function App() {
                     fontWeight: "bolder",
                     fontSize: "20px",
                     margin: "13px",
-                    marginRight: "20px",
+                    marginRight: "60px",
                   }}
                 >
                   Feel free to reach out to anyone in the community! We would
@@ -502,7 +548,6 @@ function App() {
           </div>
         </div>
       </section>
-      {/* <Carousel /> */}
     </main>
   );
 }
