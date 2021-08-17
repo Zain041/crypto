@@ -34,7 +34,7 @@ import Lizard2 from "./assets/gif/lizard2.gif";
 import waterfall from "./assets/gif/waterfall.gif";
 import roostergif1 from "./assets/gif/roosterGif/roostergif7.gif";
 import Carousel from "./components/Carousel";
-
+import Navbar from "./components/Navbar";
 // eslint-disable-next-line
 function App() {
   const run = () => {
@@ -53,7 +53,10 @@ function App() {
   }, []);
   return (
     <main style={{ overflowX: "hidden" }}>
-      <section className="front-page w-row">
+      <section>
+        <Navbar />
+      </section>
+      <section className="front-page w-row" style={{ marginTop: "60px" }}>
         <div
           style={{
             backgroundImage: `url(${waterfall})`,
@@ -108,7 +111,7 @@ function App() {
       <section
         className="p-2"
         style={{
-          backgroundImage: `url(${pineapple})`,
+          backgroundImage: `url(${welcome})`,
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -172,9 +175,13 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="p-4 htb-text">
+                    <div className="p-4 htb-text step-text">
                       <h4>Create a MetaMask Wallet</h4>
-                      <p style={{ fontWeight: "bolder" }}>
+                      <p
+                        style={{
+                          fontWeight: "bolder",
+                        }}
+                      >
                         Hulihuli token is available on the Ethereum blockchain.
                         MetaMask is the market leader in ERC20 (Ethereum)
                         wallets. On Google Chrome, visit{" "}
@@ -214,7 +221,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="p-4 htb-text">
+                    <div className="p-4 htb-text step-text">
                       <h4 className="heading-3">
                         Send $ETH to MetaMask
                         <br />
@@ -239,7 +246,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="p-4 htb-text">
+                    <div className="p-4 htb-text step-text">
                       <h4 className="heading-3">
                         Visit HulihuliX Swap
                         <br />
@@ -269,7 +276,7 @@ function App() {
                       />
                       <div className="htb-number-text"></div>
                     </div>
-                    <div className="p-4 htb-text">
+                    <div className="p-4 htb-text step-text">
                       <h4 className="heading-3">
                         Visit HulihuliX Swap
                         <br />
@@ -351,7 +358,7 @@ function App() {
               {/* <h3 className="p-5 text-center">DECENTRALIZED EXCHANGE</h3>
               <h2 className="p-5 text-center">HulihuliX Swap</h2> */}
               <p
-                className="_w-660 "
+                className="_w-660 step-text"
                 style={{
                   fontSize: "20px",
                   margin: "20px auto",
@@ -395,7 +402,7 @@ function App() {
               {/* <h3 className="p-5 text-center">DECENTRALIZED EXCHANGE</h3>
               <h2 className="p-5 text-center">HulihuliX Swap</h2> */}
               <p
-                className="_w-660 "
+                className="_w-660 step-text"
                 style={{
                   fontSize: "20px",
                   margin: "20px auto",
@@ -457,6 +464,7 @@ function App() {
                     margin: "13px",
                     marginRight: "60px",
                   }}
+                  className="p-4 step-text"
                 >
                   Feel free to reach out to anyone in the community! We would
                   love to have you. Hulihuli Inu was founded by Chris, he will

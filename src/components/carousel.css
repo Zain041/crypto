@@ -10,15 +10,11 @@
 .phase1 {
   box-shadow: 1px 2px 4px green;
   border: 1px solid green;
-  background: linear-gradient(
-    0deg,
-    rgba(99, 186, 81, 0.9500175070028011) 11%,
-    rgba(158, 93, 52, 1) 100%
-  );
   border-radius: 20px 20px 0px 0px;
-  height: 520px;
+  height: 530px;
+  cursor: pointer;
 }
-svg {
+.phase1 svg {
   border-radius: 20px 20px 0px 0px;
 }
 .years {
@@ -30,7 +26,7 @@ svg {
 }
 
 .phase1 .fa-check-circle {
-  background-color: green;
+  background-color: #a85c32;
   border-radius: 50%;
   color: white;
 }
