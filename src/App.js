@@ -310,7 +310,12 @@ function App() {
           <div style={{ backgroundImage: `url(${tree1})` }}>
             <div className="d-lg-flex d-md-flex align-items-center">
               <div className="col-lg-7 col-xl-7 col-md-7 col-sm-12">
-                <img src={rooster7} alt="rooster1" width="90%" />
+                <img
+                  src={rooster7}
+                  alt="rooster1"
+                  width="90%"
+                  style={{ transform: "scaleX(-1)" }}
+                />
                 <div />
               </div>
               <div className="text-center col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
@@ -424,9 +429,14 @@ function App() {
       >
         <div style={{ backgroundColor: "transparent" }}>
           <div>
-            <div>
+            <div className="d-lg-flex align-items-center">
               <div className="text-center col-xl-6 col-lg-6 col-md-12 col-sm-12 pull-left">
-                <img src={rooster10} width="40%" alt="rooster" />
+                <img
+                  src={rooster10}
+                  width="40%"
+                  alt="rooster"
+                  style={{ transform: "scaleX(-1)" }}
+                />
               </div>
               <div
                 style={{
@@ -434,7 +444,7 @@ function App() {
                   backgroundImage: `url(${tree3})`,
                   backgroundRepeat: "no-repeat",
                 }}
-                className=" col-xl-5 col-lg-5 col-md-12 col-sm-12 pull-right"
+                className=" col-xl-6 col-lg-6 col-md-12 col-sm-12 pull-right"
               >
                 <h2 className="text-center ">Community</h2>
                 <div className="text-center " style={{ marginRight: "60px" }}>
