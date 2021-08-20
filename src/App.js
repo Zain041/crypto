@@ -20,7 +20,7 @@ import stone from "./assets/png/stone.png";
 
 import circle from "./assets/png/circle.png";
 import leaf from "./assets/png/leaf.png";
-import wood1 from "./assets/png/wood1.png";
+import waterfallbg from "./assets/png/waterfallbg.jpg";
 import grass from "./assets/png/grass.png";
 
 import pineapple from "./assets/png/pineapple.png";
@@ -31,7 +31,10 @@ import butterfly1 from "./assets/gif/butterfly2.gif";
 import frog from "./assets/gif/frog.gif";
 import Lizard2 from "./assets/gif/lizard2.gif";
 
-import waterfall from "./assets/gif/waterfall.gif";
+import waterfall1 from "./assets/gif/waterfall1.gif";
+import waterfall3 from "./assets/gif/waterfall3.gif";
+import waterfall2 from "./assets/gif/waterfall2.gif";
+
 import roostergif1 from "./assets/gif/roosterGif/roostergif7.gif";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
@@ -56,13 +59,16 @@ function App() {
       <section>
         <Navbar />
       </section>
-      <section className="front-page w-row" style={{ marginTop: "60px" }}>
+      <section className="front-page w-row">
         <div
           style={{
-            backgroundImage: `url(${waterfall})`,
+            backgroundImage: `url(${waterfall2})`,
             height: "100vh",
             position: "relative",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
           }}
+          className="water-fall"
         >
           <img
             style={{ position: "absolute", top: "0px", right: "0px" }}
@@ -89,7 +95,7 @@ function App() {
             width="350px"
           />
           <img
-            style={{ position: "absolute", top: "0px" }}
+            style={{ position: "absolute", top: "100px" }}
             src={roostergif1}
             alt="rooster"
             width="350px"
@@ -125,7 +131,7 @@ function App() {
             <h2 className="text-center" style={{ color: "white" }}>
               Buy
             </h2>
-            <div className="text-center">
+            <div className="text-center" id="buy">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
             <h2 className="text-center">How to buy Hulihuli</h2>
@@ -305,14 +311,16 @@ function App() {
         }}
       >
         <div>
-          <div className="">
+          <div>
             <h2 className="text-center" style={{ color: "white" }}>
               Stats
             </h2>
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
-            <h2 className="text-center">Tokenomics</h2>
+            <h2 className="text-center" id="tokenomics">
+              Tokenomics
+            </h2>
           </div>
           <div style={{ backgroundImage: `url(${tree1})` }}>
             <div className="d-lg-flex d-md-flex align-items-center">
@@ -345,7 +353,7 @@ function App() {
         }}
       >
         <div>
-          <div>
+          <div id="swap">
             <h2 className="text-center " style={{ color: "white" }}>
               Swap
             </h2>
@@ -395,7 +403,9 @@ function App() {
             <div className="text-center">
               <img width="50%" height="80px" src={wood} alt="footer" />
             </div>
-            <h2 className="text-center ">Road Map</h2>
+            <h2 className="text-center " id="roadmap">
+              Road Map
+            </h2>
           </div>
           <div>
             <div>
@@ -453,7 +463,9 @@ function App() {
                 }}
                 className=" col-xl-6 col-lg-6 col-md-12 col-sm-12 pull-right"
               >
-                <h2 className="text-center ">Community</h2>
+                <h2 className="text-center " id="community">
+                  Community
+                </h2>
                 <div className="text-center " style={{ marginRight: "60px" }}>
                   <img width="100%" height="50px" src={wood} alt="footer" />
                 </div>
